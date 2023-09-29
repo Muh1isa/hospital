@@ -1,8 +1,5 @@
 .header {
-    position: relative;
-    z-index: 2;
     &__nav {
-        position: fixed;
         width: 100%;
         display: flex;
         align-items: center;
@@ -30,7 +27,54 @@
                     color: $lightBlue;
                 }
             }
+        }
+        .fa-bars {
+            display: none;
+        }
+    }
+}
 
+
+
+@media screen and (max-width: 990px) {
+    .header {
+        position: relative;
+        &__nav {
+            padding: 30px;
+            &-list {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: $primaryColor;
+                top: 89px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+                flex-direction: column;
+                align-items: center;
+                padding: 60px 0 0 0;
+                &-item {
+                    width: 90%;
+                    margin: 10px 0 0 0;
+                    padding: 20px 0;
+                    border: 1px solid $lightBlue;
+                    a {
+                        font-size: 20px;
+                    }
+                    a:hover {
+                        color: $lightBlue;
+                    }
+                }
+            }
+            &-list.show {
+                left: 0;
+            }
+            .fa-bars {
+                display: block;
+                font-size: 26px;
+                color: $white;
+                cursor: pointer;
+            }
         }
     }
 }

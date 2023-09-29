@@ -47,3 +47,24 @@
         color: $white;
     }
 }
+
+
+
+@media screen and (max-width: 990px) {
+    .hero {
+        &__wrapper {
+            top: 34%;
+            left: 4%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .hero {
+        height: 120vh;
+        &__bgColor {
+            height: 120%;
+        }
+    }
+}
