@@ -3,4 +3,33 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+$primaryColor: #002c5d;
+$lightBlue: #3ac1ec;
+$textColor: #212529;
+$white: #fff;
+
+
+@mixin title {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+@mixin btn {
+    font-size: 18px;
+    text-transform: capitalize;
+    width: 180px;
+    height: 46px;
+    color: $white;
+    background-color: $lightBlue;
+    border: none;
 }
