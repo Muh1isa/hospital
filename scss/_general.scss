@@ -23,6 +23,7 @@ $white: #fff;
 @mixin title {
     font-size: 44px;
     font-weight: 600;
+    color: $primaryColor;
     text-transform: capitalize;
 }
 

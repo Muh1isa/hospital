@@ -52,14 +52,19 @@
 
 @media screen and (max-width: 990px) {
   .header__nav {
-    padding: 30px;
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .header__nav {
+    padding: 20px;
   }
   .header__nav-list {
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100vh;
-    background-color: #002c5d;
-    top: 90px;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0px;
     left: -100%;
     text-align: center;
     flex-direction: column;
@@ -69,12 +74,12 @@
   }
   .header__nav-list-item {
     width: 90%;
-    margin: 10px 0 0 0;
-    padding: 20px 0;
+    padding: 10px 0;
     border: 2px solid #3ac1ec;
+    box-shadow: 2px 2px 5px #3ac1ec;
   }
   .header__nav-list-item a {
-    font-size: 20px;
+    font-size: 14px;
   }
   .header__nav-list-item a:hover {
     color: #3ac1ec;
@@ -84,17 +89,9 @@
   }
   .header__nav .fa-bars {
     display: block;
-    font-size: 26px;
+    font-size: 24px;
     color: #fff;
     cursor: pointer;
-  }
-}
-@media screen and (max-width: 660px) {
-  .header__nav {
-    padding: 20px;
-  }
-  .header__nav .fa-bars {
-    font-size: 24px;
   }
 }
 .hero {
@@ -158,6 +155,9 @@
     top: 34%;
     left: 4%;
   }
+  .hero h1 {
+    font-size: 45px;
+  }
 }
 @media screen and (max-width: 660px) {
   .hero {
@@ -166,10 +166,61 @@
   .hero__bgColor {
     height: 120%;
   }
+  .hero h1 {
+    font-size: 40px;
+  }
 }
 .about {
   height: 100vh;
-  background-color: aliceblue;
+}
+.about__title {
+  font-size: 44px;
+  font-weight: 600;
+  color: #002c5d;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 50px 0 10px 0;
+}
+.about__text {
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.about__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 40px 0;
+}
+.about__list-item-img {
+  width: 100px;
+  height: 100px;
+  background-color: #f1f1f1;
+}
+.about__list-item-title {
+  font-size: 21px;
+  color: #002c5d;
+  text-transform: capitalize;
+  margin: 15px 0 5px 0;
+}
+.about__list-item-text {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+  .about__list {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

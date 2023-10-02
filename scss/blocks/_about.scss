@@ -1,5 +1,54 @@
 .about {
     height: 100vh;
-    background-color: aliceblue;
-    
+    // background-color: aliceblue;
+    &__title {
+        @include title;
+        text-align: center;
+        margin: 50px 0 10px 0;
+    }
+    &__text {
+        font-weight: 300;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 300px;
+            margin: 40px 0;
+            &-img {
+                width: 100px;
+                height: 100px;
+                background-color: #f1f1f1;
+            }
+            &-title {
+                font-size: 21px;
+                color: $primaryColor;
+                text-transform: capitalize;
+                margin: 15px 0 5px 0;
+            }
+            &-text {
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 990px) {
+    .about {
+        &__list {
+            justify-content: center;
+        }
+    }
 }
